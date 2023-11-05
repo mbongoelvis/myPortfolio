@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <!-- loading link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/loadingio/transition.css@v2.0.0/dist/transition.css">
+    <!-- linking transition library -->
+    <link rel="stylesheet" href="./node_modules/@loadingio/transition.css/transition.min.css">
+</head>
+<body class="bg-primary w-full min-h-screen">
+    <!-- loader -->
+    <div class="loader absolute w-full h-screen bg-black z-30 flex items-center justify-center transition ease-out top-0">
+        <img src="./images/LCPT.gif" class="animate-pulse" alt="">
+    </div>
+   <nav>
+    <div class="container fixed top-0 bg-primary lg:relative px-3 lg:px-0 mx-auto flex justify-between py-10 h-12 items-center z-10">
+        <div class="logo w-[10rem] flex items-center">
+            <img src="./images/my logo.png" alt="" class="w-full ld ld-blur-in cursor-pointer">
+        </div>
+        <div class="links gap-[3rem] lg:gap-[5rem] h-full items-center text-white hidden lg:flex">
+            <a href="#" class="text-lg hover:opacity-60 transition ease-in-out relative before:w-0 before:h-1 before:bg-white hover:before:w-full before:bottom-0 before:absolute before:content-['']">Home</a>
+            <a href="#" class="text-lg hover:opacity-60 transition ease-in-out relative before:w-0 before:h-1 before:bg-white hover:before:w-full before:bottom-0 before:absolute before:content-['']">About</a>
+            <a href="#" class="text-lg hover:opacity-60 transition ease-in-out relative before:w-0 before:h-1 before:bg-white hover:before:w-full before:bottom-0 before:absolute before:content-['']">Skills</a>
+            <a href="#" class="text-lg hover:opacity-60 transition ease-in-out relative before:w-0 before:h-1 before:bg-white hover:before:w-full before:bottom-0 before:absolute before:content-['']">Projects</a>
+            <a href="#" class="text-lg hover:opacity-60 transition ease-in-out relative before:w-0 before:h-1 before:bg-white hover:before:w-full before:bottom-0 before:absolute before:content-['']">Contact</a>
+            <a href="#" class="text-white font-bold border px-5 py-2 rounded-3xl hover:bg-white hover:text-black transition ease hover:border-none">Download CV</a>
+        </div>
+        <!-- mobile menu -->
+        <div class="lg:hidden relative">
+            <div class="w-9 px-1 border rounded cursor-pointer">
+                <img src="./images/menu.png" alt="" width="100%" class="menu">
+            </div>
+            <!-- menu  -->
+            <div class="menu-dropdown absolute right-0 top-9 w-[14rem] rounded bg-secondary text-white text-center hidden flex-col gap-5 px-4 py-6">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <a href="#" class="text-white font-bold border px-5 py-2 rounded-3xl hover:bg-white hover:text-black transition ease hover:border-none">Download CV</a>
+            </div>
+        </div>
+    </div>
+   </nav>
+
+   <!-- hero section -->
+   <div class="container px-4 lg:px-0 min-h-[45rem] grid grid-cols-1 lg:grid-cols-2 mt-[6rem] lg:mt-[3rem] mx-auto">
+    <!-- hero text section -->
+    <div class="h-full flex flex-col justify-center">
+        <p class="text-gray-600 tracking-[.4rem] text-center lg:text-start ld ld-blur-in">LETS BUILD TOGETHER</p>
+        <p class="text-[1.8rem] md:text-[3rem] font-bold mt-6 text-center lg:text-start text-white ld ld-blur-in">HI, am called <span class="text-gray-500">Mbongo elvis</span></p>
+        <p class="text-gray-400 text-center lg:text-start font-bold text-2xl lg:text-3xl mt-4 ld ld-blur-in">Am a frontend web Developer</p>
+        <p class="text-center lg:text-start text-gray-400 text-xl lg:text-2xl my-5 leading-[40px] lg:leading-[50px] ld ld-blur-in">I'm a creative Web Developer based in cameroon, I'm passionate and dedicated to my Job. I can help you bring your ideas to life </p>
+    </div>
+    <div class="h-full flex items-center justify-center relative">
+        <div class="lg:w-[80%] min-w-[5rem] rounded-full overflow-hidden border border-gray-200">
+            <img src="./images/me.png" alt="" width="100%" class="min-w-[5rem]">
+        </div>
+        <div class="absolute flex gap-5 w-full justify-center bottom-6">
+            <img src="./images/png-transparent-logo-html-html5-removebg-preview.png" class="w-[5rem] animate-bounce-slow1" alt="">
+            <img src="./images/css.png" class="w-[5rem] animate-bounce-slow2" alt="">
+            <img src="./images/js-removebg-preview.png" class="w-[5rem] animate-bounce-slow3" alt="">
+            <img src="./images/react-removebg-preview.png" class="w-[5rem] animate-bounce-slow4" alt="">
+        </div>
+    </div>
+   </div>
+
+
+   <!-- lenis -->
+   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script> 
+   <!-- script link -->
+   <script src="script.js"></script>
+</body>
+</html>
